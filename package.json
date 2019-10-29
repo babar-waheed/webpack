@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/babar-waheed/webpack/issues"
   },
-  "homepage": "https://github.com/babar-waheed/webpack#readme"
+  "homepage": "https://github.com/babar-waheed/webpack#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^2.2.0-rc.0"
+  }
 }
