@@ -7,5 +7,10 @@
 //ES2015
     // import, export
 //CommonJS
-const sum = require("./sum");
+//const sum = require("./sum");
+
+//ES2015 / ES6
+import sum from './sum';
+import './image_viewer';
+
 console.log(sum(1, 2));

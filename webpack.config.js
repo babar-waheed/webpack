@@ -1,4 +1,5 @@
 const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 //Modules
 //babel-loader teach babel how to work with Webpack
@@ -23,9 +24,18 @@ const config = {
                         presets: ['@babel/preset-env']
                     }
                 }
+            },
+            {
+                test: /\.css$/,
+                loader: ExtractTextPlugin.extract({
+                    loader: 'css-loader'
+                })
             }
         ]
-    }
+    },
+    plugins: [
+        new ExtractTextPlugin('style.css')
+    ],
 };
 
 module.exports = config;
