@@ -10,7 +10,19 @@
 //const sum = require("./sum");
 
 //ES2015 / ES6
-import sum from './sum';
-import './image_viewer';
+// import sum from './sum';
+// import './image_viewer';
+//
+// console.log(sum(1, 2));
 
-console.log(sum(1, 2));
+const button = document.createElement('button');
+button.innerText = 'click';
+button.onclick = () => {
+    System.import('./image_viewer')
+        .then(module => {
+           module.default();
+    })
+
+};
+
+document.body.appendChild(button);
