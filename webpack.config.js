@@ -11,7 +11,8 @@ const config = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath: "build/"
     },
     module: {
         rules: [
@@ -30,6 +31,15 @@ const config = {
                 loader: ExtractTextPlugin.extract({
                     loader: 'css-loader'
                 })
+            },
+            {
+                test: /\.(png|jpg|gif)$/i,
+                use: {
+                    loader: 'url-loader',
+                    options: {
+                        limit: 8192
+                    },
+                },
             }
         ]
     },
