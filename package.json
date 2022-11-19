@@ -23,11 +23,11 @@
     "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
     "css-loader": "^3.2.0",
-    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^4.2.0",
     "image-webpack-loader": "^6.0.0",
     "style-loader": "^1.0.0",
     "url-loader": "^2.2.0",
-    "webpack": "^2.7.0"
+    "webpack": "^5.75.0"
   }
 }
